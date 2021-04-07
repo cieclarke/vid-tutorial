@@ -1,0 +1,22 @@
+{
+  "name": "vidtutorialservice",
+  "version": "1.0.0",
+  "description": "video tutorials web service api",
+  "main": "index.js",
+  "scripts": {
+    "test": "export VID_APP_API_URL='https://lingumi-take-home-test-server.herokuapp.com/videoTutorials' && 'node_modules/mocha/bin/mocha' test/tutorials.test.js",
+    "service": "export VID_APP_API_URL='https://lingumi-take-home-test-server.herokuapp.com/videoTutorials' && node index.js"
+  },
+  "author": "ciec",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "express": "^4.17.1",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {
+    "chai-arrays": "^2.2.0",
+    "mocha": "^8.3.2"
+  }
+}
